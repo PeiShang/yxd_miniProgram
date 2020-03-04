@@ -1,0 +1,10 @@
+<view class="border"
+      bind:tap="handleItemClick">
+  <view class="upper">
+    <text class="title">{{title}}</text>
+    <text class="date">{{date}}</text>
+  </view>
+  <view class="lower">
+    <view class="desc">{{desc}}</view>
+  </view>
+</view>

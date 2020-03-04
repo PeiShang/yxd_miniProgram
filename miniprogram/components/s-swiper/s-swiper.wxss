@@ -1,0 +1,25 @@
+/* components/s-swiper.wxss */
+.swiper {
+  height: 400rpx;
+  width: 100%;
+  background: white;
+}
+
+.swiper-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.swiper-view{
+  margin-top: 60rpx;
+  width: 660rpx;
+  height: 284rpx;
+  background: #4A59B8;
+  border-style: solid;
+  border-color: #4A59B8;
+  border-width: 2rpx;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -1,0 +1,63 @@
+<!--miniprogram/pages/home/home.wxml-->
+
+<!-- 顶部banner -->
+<s-swiper list="{{banners}}"
+          />
+
+<!-- 数据展示部分 -->
+<view class="show-data">
+
+  <!-- 展示时间数据 -->
+  <s-date-view  class="date-view" 
+                date="{{currentDate}}"/>
+
+  <!-- 选择Scale的RadioGroup -->
+  <s-radio-group class="scale-radio-group"
+                 titles="{{['全国', '湖北', '宜昌']}}"
+                 bind:radioChange="handleScaleRadioClick"/>
+
+  <!-- Total饼图 -->
+  <view class="total-container">
+    <view class="chart-text">总量</view>
+    <canvas canvas-id="chartTotal" class="chart-total"/>
+    <view class="chart-detail">
+      <view wx:for="{{totalTitles}}" 
+            wx:key="index"
+            class="detail-block">
+        <view class="detail-title">{{item}}</view>
+        <view class="detail-number">{{totalDetail[index]}}</view>
+      </view>
+      <view class="total-block">
+        <view class="detail-title">总计</view>
+        <view class="detail-number">{{totalNum}}</view>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 选择type的RadioGroup -->
+  <s-radio-group class="scale-radio-group"
+                titles="{{['确诊', '治愈', '死亡']}}"
+                bind:radioChange="handleTypeRadioClick"/>
+
+  <!-- Increment柱状图-->
+  <view class="increment-container">
+
+    <view class="chart-text">增量</view>
+
+    <!-- 增量柱状图 -->
+    <canvas canvas-id="chartIncrement" 
+            class="chart-increment"
+            wx:if="{{!isEmpty}}"/>
+
+    <!-- 增量为 0 -->
+    <view class="increment-container" wx:if="{{isEmpty}}">
+      <view class="bold-title">0</view>
+      <view class="bold-desc">新增</view>
+    </view>
+
+    
+  </view>
+  
+
+</view>

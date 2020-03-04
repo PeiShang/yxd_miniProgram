@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "s-swiper" : "/components/s-swiper/s-swiper",
+    "s-date-view" : "/components/s-date-view/s-date-view",
+    "s-radio-group" : "/components/s-radio-group/s-radio-group"
+  }
+}

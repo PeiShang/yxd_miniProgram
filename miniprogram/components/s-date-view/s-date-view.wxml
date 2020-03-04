@@ -1,0 +1,14 @@
+<!--components/s-date-view/s-date-view.wxml-->
+<view class="container">
+  <view class="border"
+        bind:tap="handleItemClick">
+    <view class="upper">
+      <text class="date">{{date}}</text>
+    </view>
+    <view class="lower">
+      <text class="time">{{startTime}} - {{endTime}}</text>
+    </view>
+  </view>
+</view>
+
+

@@ -1,0 +1,14 @@
+<!--components/s-radio-group.wxml-->
+<view class="container">
+  <radio-group class="radio-group"
+               bind:change="radioChange">
+    <block wx:for="{{titles}}" wx:key="index">
+      <view class="radio-view">
+        <radio class="radio" 
+               value="{{index}}" 
+               checked="{{index == current_index}}"/>
+        {{item}} 
+      </view>   
+    </block>
+  </radio-group>
+</view>

@@ -1,0 +1,50 @@
+/* components/s-date-view/s-date-view.wxss */
+.container{
+  width: 306rpx;
+  height: 120rpx;
+  background: #FF9C81;
+  border-style: solid;
+  border-color: #FF9C81;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.border{
+  width: 250rpx;
+  height: 90rpx;
+  border-left: solid;
+  border-left-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.upper{
+  width: 250rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lower{
+  width: 250rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: flex-end;
+}
+
+.date{
+  color: white;
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+
+.time{
+  color: white;
+  font-size: 25rpx;
+  margin-left: 20rpx;
+  margin-top:10rpx;
+}

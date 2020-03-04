@@ -1,0 +1,47 @@
+/* components/s-swiper-content/s-swiper-content.wxss */
+.border{
+  width: 460rpx;
+  height: 170rpx;
+  border-left: solid;
+  border-left-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.upper{
+  width: 400rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10rpx;
+}
+
+.lower{
+  width: 400rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 10rpx;
+
+}
+
+.title{
+  color: white;
+  font-size: 48rpx;
+  font-weight: bold; 
+}
+
+.date{
+  color: #F6D645;
+  font-size: 24rpx;
+}
+
+.desc{
+  color: white;
+  font-size: 32rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

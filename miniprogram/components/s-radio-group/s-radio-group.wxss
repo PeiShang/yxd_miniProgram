@@ -1,0 +1,12 @@
+/* components/s-radio-group.wxss */
+.container{
+  width: 100%;
+}
+
+.radio-group{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
