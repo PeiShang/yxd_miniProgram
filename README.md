@@ -4,6 +4,10 @@
 
 - 微信云开发：搭建了数据库用以存放前端展示数据
 - wx-chart：微信小程序图表绘制工具https://github.com/xiaolin3303/wx-charts
+截图：
+(https://github.com/PeiShang/yxd_miniProgram/blob/master/screenshots/screen01.png)
+(https://github.com/PeiShang/yxd_miniProgram/blob/master/screenshots/screen02.png)
+(https://github.com/PeiShang/yxd_miniProgram/blob/master/screenshots/screen03.png)
 
 
 
